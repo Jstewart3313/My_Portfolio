@@ -1,20 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './Header.scss'
+import { Spring, animated } from 'react-spring/renderprops'
 
-
-class Header extends Component {
-  render() {
-    return (
-      <div className='header-main'>
-        <div className='name'>
-          Justin Stewart
-        </div>
-        <div className='sub-header'>
-          Hi. I'm Justin Stewart.<br/> A veteran, software developer and human.
-        </div>
-      </div>
-    );
-  }
+export default function Header() {
+  return (
+    <Spring
+      from={{ opacity: 0}}
+      to={{ opacity: 1}} 
+      config={{ delay: 500, duration: 2500}}
+    >
+      {
+        props => (
+          <div style={props}>
+            <div>
+              <div className="name">
+                  Justin Stewart
+              </div>
+              <div className='sub-header'>
+                  Hi. I'm Justin.<br/> I'm an avid seeker of knowledge and dedicated problem solver.
+              </div>  
+            </div>
+          </div>
+        )
+      }
+    </Spring> 
+  );
 }
-
-export default Header;
