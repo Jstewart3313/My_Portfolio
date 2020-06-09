@@ -1,31 +1,38 @@
 .name {
     font-family: 'Semibold';
     font-size: 2vw;
-    font-size: 1.6em;
+    // font-size: 1.6em;
     line-height: 80%;
     color: #111111;
-    margin: 12vmin 30vmin 18vmin 30vmin;
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: 5% 10% 5% 10%; 
     
 }
 
 .sub-header {
     font-family: 'Semibold';
     font-size: 6.4vw;
-    font-size: 5em;
+    // font-size: 5em;
     line-height: 120%;
     color: #111111;
     font-weight: bold;
-    margin: 12vmin 30vmin 188px 30vmin;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
+    margin: 5% 10% 5% 10%; 
 }
+
+
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 
 

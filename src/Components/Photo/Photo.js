@@ -8,7 +8,7 @@ export default function Photo() {
       <Spring
         from={{ opacity: 0}}
         to={{ opacity: 1}} 
-        config={{ delay: 500, duration: 2500}} 
+        config={{ delay: 1000, duration: 2500}} 
       >
         {
           props => (

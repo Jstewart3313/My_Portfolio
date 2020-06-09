@@ -5,9 +5,9 @@ import { Spring, animated } from 'react-spring/renderprops'
 export default function Header() {
   return (
     <Spring
-      from={{ opacity: 0}}
-      to={{ opacity: 1}} 
-      config={{ delay: 500, duration: 2500}}
+      from={{ opacity: 0, paddingLeft: "10%", paddingRight: "10%"}}
+      to={{ opacity: 1, paddingLeft: "10%", paddingRight: "10%"}} 
+      config={{ delay: 500, duration: 2500 }}
     >
       {
         props => (
