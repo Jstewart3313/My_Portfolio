@@ -7,7 +7,7 @@
 }
 
 .intro-header {
-  font-size: 6.4vw;
+  font-size: 4.4vw;
   font-weight: bold;
   font-family: 'Semibold';
   margin: 5% 0%; 
@@ -15,7 +15,7 @@
 
 .intro-p1 {
     font-family: 'Medium';
-    font-size: 2em;
+    font-size: 2vw;
     color: #111111;
     line-height: 140%;
     margin-bottom: 6vmin;
@@ -26,7 +26,7 @@
 
 .intro-p2 {
     font-family: 'Semibold';
-    font-size: 1.6em;
+    font-size: 2.6vw;
     color: #111111;
     line-height: 140%;
     margin-bottom: 6vmin;
@@ -36,7 +36,7 @@
 
 .intro-p3 {
   font-family: 'Semibold';
-  font-size: 1.6em;
+  font-size: 2.6vw;
   color: #111111;
   line-height: 140%;
   margin-bottom: 6vmin;
@@ -46,10 +46,28 @@
 
 .intro-p4 {
   font-family: 'Semibold';
-  font-size: 1.6em;
+  font-size: 2.6vw;
   color: #111111;
   line-height: 140%;
   margin-bottom: 6vmin;
   overflow: hidden;
   // margin: 5vmin 30vmin 188px 30vmin;
+}
+
+@media only screen and (max-width: 750px) {
+  .intro-p1 {
+    font-size: 4vw;
+  }
+
+  .intro-p2 {
+    font-size: 4vw;
+  }
+
+  .intro-p3 {
+    font-size: 4vw;
+  }
+
+  .intro-p4 {
+    font-size: 4vw;
+  }
 }
